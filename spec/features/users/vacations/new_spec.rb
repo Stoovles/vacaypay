@@ -38,7 +38,7 @@ describe 'as a registered user that has connected with a dwolla funding source' 
     expect(vacation_users.vacation_id).to eq(vacation.id)
   end
 
-  it 'can will not create a vacation with missing information' do
+  it 'will not create a vacation with missing information' do
     user = create(:user, dwolla_id: "1234567", dwolla_funding_source: "ASD-123-ASDK-134")
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
@@ -52,7 +52,6 @@ describe 'as a registered user that has connected with a dwolla funding source' 
     click_button "Create Vacation"
 
     expect(page).to have_content("Name can't be blank")
-    expect(page).to have_content("Location can't be blank")
     expect(page).to have_content("Start date can't be blank")
     expect(page).to have_content("End date can't be blank")
   end
