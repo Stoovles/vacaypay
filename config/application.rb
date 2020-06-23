@@ -33,7 +33,7 @@ module Terrificus
     config.action_mailer.smtp_settings = {
       address: 'smtp.sendgrid.net',
       port: '587',
-      domain: 'cryptic-brook-29556.herokuapp.com',
+      domain: 'powerful-everglades-07534.herokuapp.com',
       user_name: ENV["SENDGRID_USERNAME"],
       password: ENV["SENDGRID_PASSWORD"],
       authentication: 'plain',
