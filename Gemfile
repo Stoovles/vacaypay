@@ -17,6 +17,7 @@ gem 'jquery-rails', '~> 4.1.1'
 gem 'figaro'
 gem 'newrelic_rpm'
 gem 'bcrypt'
+gem 'ddtrace'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 
